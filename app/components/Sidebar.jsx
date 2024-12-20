@@ -60,7 +60,7 @@ const Sidebar = ({ docs }) => {
   }, [pathName]);
 
   return (
-    <nav class='lg:block my-10'>
+    <nav className='lg:block my-10'>
       <ul>
         <div className='relative mt-3 my-10'>
           <div className='absolute inset-x-0 top-0 bg-zinc-800/2.5 will-change-transform dark:bg-white/2.5'></div>
@@ -72,7 +72,7 @@ const Sidebar = ({ docs }) => {
           className='border-l border-transparent'>
           {rootNodes.map((rootNode) => (
             <li
-              key={rootNode.it}
+              key={rootNode.id}
               className='relative'>
               <Link
                 aria-current='page'

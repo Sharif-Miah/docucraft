@@ -3,7 +3,7 @@ export const getDocumentsByCategory = (docs, category) => {
 };
 
 export const getDocumentsByAuthor = (docs, author) => {
-  return docs.filter((doc) => doc.author === author);
+  return docs.filter((doc) => encodeURI(doc.author) === author);
 };
 
 export const getDocumentsByTag = (docs, tag) => {

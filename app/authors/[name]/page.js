@@ -6,7 +6,11 @@ const AuthorPage = ({ params: { name } }) => {
   const docs = getDocuments();
   const matchedDocuments = getDocumentsByAuthor(docs, name);
 
-  return <ContentDisplay id={matchedDocuments[0].id} />;
+  return (
+    <>
+      <ContentDisplay id={matchedDocuments[0].id} />
+    </>
+  );
 };
 
 export default AuthorPage;

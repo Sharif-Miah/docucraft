@@ -21,7 +21,7 @@ const Search = ({ docs }) => {
     const found = docs.filter((doc) => {
       return doc.title.toLowerCase().includes(term.toLowerCase());
     });
-    console.log(found);
+
     setSearchResult(found);
   }, 500);
 
